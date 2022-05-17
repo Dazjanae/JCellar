@@ -1,0 +1,261 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+    box-sizing: border-box;
+}
+html {
+    /* Location of the image */
+    background-image: url("/Users/dazjanaejohnson/Desktop/Leon Noel Coding/class10-materials/Restaurant/images/wine cellar.png");
+    
+    /* Image is centered vertically and horizontally at all times */
+    background-position: center center;
+    
+    /* Image doesn't repeat */
+    background-repeat: no-repeat;
+    
+    /* Makes the image fixed in the viewport so that it doesn't move when 
+       the content height is greater than the image height */
+    background-attachment: fixed;
+    
+    /* This is what makes the background image rescale based on its container's size */
+    background-size: cover;
+    
+    /* Pick a solid background color that will be displayed while the background image is loading */
+    background-color:#464646;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    width: 20%;
+    height: 100%;
+    background-color: black;
+    border-right: 3px solid bisque;
+    justify-content: center;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+nav li {
+    padding: .5em;
+    margin: .5em;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+    text-transform: lowercase;
+}
+a {
+    color: rgb(214, 182, 142);
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+}
+/* main {
+    display: flex;
+    flex-direction: column;
+} */
+.wineCellar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100vw;
+    height: 100vh;
+    /* object-fit: cover; */
+}
+.wineCellar h1 {
+    font-size: 10vw;
+    text-align: center;
+    color:bisque;
+    background-color: hsl(0,0%,0%,0.8);
+    /* justify-content: center; */
+    border: 5px solid black;
+    border-radius: 1%;
+    margin-right: .3em;
+    /* margin-bottom: 1.5em; */
+}
+h1 {
+    font-size: 4.5em;
+    width: 35%;
+    margin: 4% 0 0 11%;
+}
+form {
+    width: 100%;
+    margin: .5em 0 0 10.25em;
+}
+.toBegin ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.toBegin + ul li {
+    justify-content: space-evenly;
+    padding: .5em;
+    margin: .5em;
+}
+.socialNetworks {
+    margin-left: 9.25em;
+}
+.socialNetworks img {
+    width: 1.5em;
+    height: 1.5em;
+    margin: 1em 0 0 0;
+}
+.discovery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    margin: 2% 0 0 30%;
+    border: 3px solid black;
+}
+.specialty, .book {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+}
+.yummyFood {
+    width: 41em;
+    border: 1px solid orange;
+}
+.yummyFood img {
+    width: 10em;
+}
+section > h2 {
+    color: black;
+    font-weight: 800;
+    font-size: 2.5em;
+}
+h2 {
+    margin: 0 0 1em 0;
+}
+p {
+    margin-bottom: 2em;
+}
+.operation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5em;
+}
+
+  
+  /* For mobile devices */
+  /* @media only screen and (max-width: 767px) {
+    body { */
+      /* The file size of this background image is 93% smaller
+       * to improve page load speed on mobile internet connections */
+      /* background-image: url(images/background-photo-mobile-devices.jpg); */
+
+    
+/* Media Queries */
+@media only screen and (min-width: 413px) and (max-width: 700px) {
+    nav {
+        width: 35%;
+        border: 3px solid bisque;
+    }
+    nav li {
+        padding: .05em;
+        margin: .05em;
+    }
+}
+
+@media only screen and (max-width: 412px) {
+    nav {
+            display: flex;
+            flex-direction: row;
+            position:absolute;
+            width: 100%;
+            height: 30%;
+            border-right: none;
+            border-bottom: 5px dotted bisque;
+        }
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            justify-content: space-around;
+            flex-direction: row;
+            flex-wrap:wrap;
+            align-items: center;
+            align-content: center;
+        }
+        nav li {
+            padding: .1em;
+            margin: .1em;
+            font-size: 1.7em;
+            font-weight: 600;
+        }
+        .wineCellar {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            /* object-fit: cover; */
+        }
+        .wineCellar h1 {
+            font-size: 25vw;
+            text-align: center;
+            border: none;
+            border-radius: 50%;
+            margin-right: 0;
+            width: 80%;
+            margin: 150px 0 0 0;
+            padding: 30px;
+        }
+}
