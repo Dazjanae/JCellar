@@ -49,7 +49,7 @@ table {
 * {
     box-sizing: border-box;
 }
-body {
+.wineCellar{
     /* Location of the image */
     background-image: url("https://github.com/Dazjanae/JCellar/blob/a78229324de6082e346e0327f832a881c8d2ac45/images/winecellar.png");
     
