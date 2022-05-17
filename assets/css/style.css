@@ -51,7 +51,7 @@ table {
 }
 html {
     /* Location of the image */
-    background-image: url("/Users/dazjanaejohnson/Desktop/Leon Noel Coding/class10-materials/Restaurant/images/wine cellar.png");
+    background-image: url("images/wine cellar.png");
     
     /* Image is centered vertically and horizontally at all times */
     background-position: center center;
