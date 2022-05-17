@@ -51,7 +51,7 @@ table {
 }
 body {
     /* Location of the image */
-    background-image: url("images/winecellar.png");
+    background-image: url("assets/css/images/winecellar.png");
     
     /* Image is centered vertically and horizontally at all times */
     background-position: center center;
