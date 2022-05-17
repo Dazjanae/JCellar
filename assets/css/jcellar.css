@@ -51,7 +51,7 @@ table {
 }
 .wineCellar{
     /* Location of the image */
-    background-image: url("https://github.com/Dazjanae/JCellar/blob/a78229324de6082e346e0327f832a881c8d2ac45/images/winecellar.png");
+    background-image: url("images/winecellar.png");
     
     /* Image is centered vertically and horizontally at all times */
     background-position: center center;
