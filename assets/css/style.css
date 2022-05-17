@@ -61,7 +61,7 @@ body {
     
     /* Makes the image fixed in the viewport so that it doesn't move when 
        the content height is greater than the image height */
-/*     background-attachment: fixed; */
+    background-attachment: fixed;
     
     /* This is what makes the background image rescale based on its container's size */
     background-size: cover;
