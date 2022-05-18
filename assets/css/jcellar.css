@@ -93,6 +93,7 @@ nav li {
     font-weight: 600;
     text-align: center;
     text-transform: lowercase;
+    font-family:'Roboto', sans-serif;
 }
 a {
     color: rgb(214, 182, 142);
@@ -124,6 +125,7 @@ a:hover{
     border-radius: 1%;
     margin-right: .3em;
     /* margin-bottom: 1.5em; */
+    font-family: 'Italiana', serif;
 }
 h1 {
     font-size: 4.5em;
