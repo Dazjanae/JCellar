@@ -1,3 +1,5 @@
+
+    
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -104,7 +106,7 @@ a {
 a:hover{
     color: white;
 }
-.wineCellar, .discovery {
+.wineCellar, .discovery,.yummyFood, .booking, .location {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -113,7 +115,7 @@ a:hover{
     height: 100vh;
     /* object-fit: cover; */
 }
-.wineCellar h1, .neat {
+.wineCellar h1, .neat, .menuSelections, .tastings, .hours {
     font-size: 10vw;
     text-align: center;
     color:bisque;
@@ -125,7 +127,7 @@ a:hover{
     font-family: 'Italiana', serif;
     /* margin-bottom: 1.5em; */
 }
-.neat {
+.neat, .menuSelections, .tastings, .hours {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -137,19 +139,33 @@ h1 {
     width: 35%;
     margin: 4% 0 0 11%;
 }
-.neat h1 {
+.neat h1, .menuSelections h1, .tastings h1, .hours h1 {
     font-size: .25em;
     width: 50%;
     margin: 0 0 2% 0;
 }
-.neat p {
+.neat p, .tastings p, .hours p, .hours span{
     font-size: .15em;
     font-family:'Roboto', sans-serif;
     line-height: 1.5em;
 }
-form {
-    width: 100%;
-    margin: .5em 0 0 10.25em;
+.menuSelections img {
+    width: 80%;
+    height: 100%;
+    margin-bottom: 4%;
+}
+.tastings form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    /* margin: .5em 0 0 10.25em; */
+}
+.tastings label {
+    font-size: .1em;
+}
+.submitButton {
+    margin: 4% 0;
 }
 .toBegin ul {
     display: flex;
@@ -169,20 +185,13 @@ form {
     height: 1.5em;
     margin: 1em 0 0 0;
 }
-.specialty, .book {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5em;
-}
-.yummyFood {
+/* .yummyFood {
     width: 41em;
     border: 1px solid orange;
 }
 .yummyFood img {
     width: 10em;
-}
+} */
 section > h2 {
     color: black;
     font-weight: 800;
@@ -201,6 +210,9 @@ p {
     align-items: center;
     margin-top: 5em;
 }
+.theCellar {
+    font-weight: 800;
+}
 
   
   /* For mobile devices */
@@ -214,6 +226,7 @@ p {
 /* Media Queries */
 @media only screen and (min-width: 413px) and (max-width: 700px) {
     nav {
+        position: absolute;
         width: 35%;
         border: 3px solid bisque;
     }
@@ -221,16 +234,35 @@ p {
         padding: .05em;
         margin: .05em;
     }
-    .neat h1 {
+    .neat h1, .tastings h1, .hours h1 {
         font-size: .75em;
     }
-    .neat p {
+    .tastings h1 {
+        width: 100%;
+    }
+    .neat p, .tastings p, .neat p, .hours span {
         font-size: .23em;
     }
     button {
         margin: -1em 0 0 0;
     }
+    .tastings label {
+        font-size: 20%;
+    }
 }
+
+@media only screen and (min-width: 568px) and (max-width: 599px) {
+    .tastings {
+        margin-top: 38%;
+    }
+}
+
+@media only screen and (min-width: 660px) and (max-width: 669px) {
+    .tastings {
+        margin-top: 33%;
+    }
+}
+
 
 @media only screen and (max-width: 412px) {
         nav {
@@ -257,7 +289,7 @@ p {
             font-size: 1.7em;
             font-weight: 600;
         }
-        .wineCellar, .discovery{
+        .wineCellar, .discovery, .yummyFood, .booking, .location{
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -266,7 +298,7 @@ p {
             height: 100vh;
             /* object-fit: cover; */
         }
-        .wineCellar h1, .neat {
+        .wineCellar h1, .neat, .menuSelections, .tastings, .hours{
             font-size: 25vw;
             text-align: center;
             border: none;
@@ -276,20 +308,32 @@ p {
             margin: 150px 0 0 0;
             padding: 30px;
         }
-        .neat {
+        .neat, .menuSelections, .tastings, .hours {
             margin: 80% 0 0 0;
             border-radius: 10%;
         }
-        .neat h1 {
+        .neat h1,.menuSelections h1, .tastings h1, .hours h1 {
             font-size: 40%;
             margin: -8% 0 3% 0;
             width: 100%;
         }
-        .neat p {
+        .neat p, .tastings p, .hours p, .hours span {
             font-size: .21em;
             width: 125%;
+        }
+        .tastings {
+            margin-top: 150%;
         }
         button {
             display: none;
         }
+        .menuSelections img {
+            width: 150%;
+            height: 100%;
+            margin-bottom: 4%;
+        }
+        .tastings label {
+            font-size: 20%;
+        }
 }
+
