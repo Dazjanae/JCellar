@@ -14,7 +14,7 @@ This is a static website which allows viewing of this business' details such as 
 <!-- How to install and run the program -->
 
 <h2>How to Use the Project</h2>
-This project can be viewed at <a href="https://jaredscellar.netlify.app>Jared's Cellar</a>
+This project can be viewed at <a href="https://jaredscellar.netlify.app">Jared's Cellar</a>
 
 <!--include a credit
 add a license-->
