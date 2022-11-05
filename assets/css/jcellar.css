@@ -82,6 +82,7 @@ nav {
     border-right: 3px solid bisque;
     justify-content: center;
 }
+/*sets the alignment of the entire navigation's grouped list*/
 nav ul {
     display: flex;
     list-style-type: none;
@@ -89,6 +90,7 @@ nav ul {
     flex-direction: column;
     align-items: center;
 }
+/*sets appearance and alignment of each item in the navigation's list*/
 nav li {
     padding: .5em;
     margin: .5em;
@@ -98,6 +100,7 @@ nav li {
     text-transform: lowercase;
     font-family:'Roboto', sans-serif;
 }
+/*removes underline of link & sets color of link before hover*/
 a {
     color: rgb(214, 182, 142);
     text-decoration: none;
@@ -106,6 +109,7 @@ a {
 a:hover{
     color: white;
 }
+/*Set the appearance of transparent black background*/
 .wineCellar, .discovery,.yummyFood, .booking, .location {
     display: flex;
     flex-direction: column;
@@ -115,6 +119,7 @@ a:hover{
     height: 100vh;
     /* object-fit: cover; */
 }
+/*sets appearance of content for the listed classes*/
 .wineCellar h1, .neat, .menuSelections, .tastings, .hours {
     font-size: 10vw;
     text-align: center;
