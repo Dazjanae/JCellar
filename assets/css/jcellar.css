@@ -233,7 +233,7 @@ p {
     nav {
         position: absolute;
         width: 35%;
-        border: 3px solid bisque;
+        /*border: 3px solid bisque;*/
     }
     nav li {
         padding: .05em;
@@ -269,7 +269,7 @@ p {
 }
 
 
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 415px) {
         nav {
             display: flex;
             flex-direction: row;
